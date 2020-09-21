@@ -1,3 +1,5 @@
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -11,7 +13,7 @@ class QueueTest {
     ArrayList<Duck> duckListD = new ArrayList<>();
 
 
-    @Test
+    @BeforeEach
     void loadInQueues(){
         for(int i = 1; i<=10; i++){
             Duck tempA = new Duck(i, "A" + i);
@@ -37,7 +39,6 @@ class QueueTest {
 
     @Test
     void Queue(){
-        loadInQueues();
         assertEquals(duckListA.get(0).getName(),"A1");
         assertEquals(duckListA.size(), 10);
 
