@@ -7,5 +7,5 @@ I opgaven er der tre opgaver, som vi opdeler i mindre bidder:
 fjerne samt se antallet af elementer i queueen. Det er altid 
 det første element, der vil blive fjernet i queueen. 
 
-2. 
+2. ...
 
